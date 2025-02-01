@@ -52,6 +52,15 @@ The alligner performs the following steps in order:
 
 ---
 
+### Create a GIF
+
+```bash
+ffmpeg -framerate 8 -pattern_type glob -i './*.jpg' -c:v libx264 -pix_fmt yuv420p face.mp4
+ffmpeg -i face.mp4 face.gif
+```
+
+---
+
 ### Limitations and known issues
 
 Using this script is a semi-automatic process.
